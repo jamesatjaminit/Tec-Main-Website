@@ -1,70 +1,75 @@
-	<footer class="page-footer">
-		<div class="container">
-			<div class="row no-margin valign-wrapper">
-				<div class="col m4 l4 hide-on-small-and-down left-align">
-					<a href="/legal/">Legal</a>
-					&nbsp; &boxv; &nbsp;
-					<a href="https://members.nottinghamtec.co.uk">Members' Login</a>
-				</div>
+<footer class="page-footer">
+	<div class="container">
+		<div class="row no-margin valign-wrapper">
+			<div class="col m4 l4 hide-on-small-and-down left-align">
+				<a href="/legal/">Legal</a>
+				&nbsp; &boxv; &nbsp;
+				<a href="https://members.nottinghamtec.co.uk">Members' Login</a>
+			</div>
 
-				<div class="col s12 m4 l4 center-align">
-					&copy; TEC PA &amp; Lighting
-					<span class="hide-on-med-and-down">
-						&emsp;&emsp;
-						<!-- Social Media Icons-->
-						<a href="https://www.facebook.com/nottinghamtec" rel="noopener" target="_blank"><span class="fab fa-facebook"></span></a>
-						&nbsp;
-						<a href="https://twitter.com/nottinghamtec" rel="noopener" target="_blank"><span class="fab fa-twitter"></span></a>
-						&nbsp;
-						<a href="https://www.instagram.com/nottinghamtec/" rel="noopener" target="_blank"><span class="fab fa-instagram"></span></a>
-					</span>
-				</div>
-				<div class="col m3 hide-on-small-and-down">
-					<a href="https://su.nottingham.ac.uk/" rel="nofollow">
-						<img class="assoc-logo valign right" src="/imgs/UoNSU-small.png" alt="University of Nottingham Students' Union">
-					</a>
-				</div>
-				<div class="col m1 hide-on-small-and-down" style="margin-left: 1em;">
-					<a href="https://www.plasa.org/" rel="nofollow">
-						<img class="assoc-logo valign right" src="/imgs/plasa.svg" alt="Plasa Member">
-					</a>
-				</div>
+			<div class="col s12 m4 l4 center-align">
+				&copy; TEC PA &amp; Lighting
+				<span class="hide-on-med-and-down">
+					&emsp;&emsp;
+					<!-- Social Media Icons-->
+					<a href="https://www.facebook.com/nottinghamtec" rel="noopener" target="_blank"><span
+							class="fab fa-facebook"></span></a>
+					&nbsp;
+					<a href="https://twitter.com/nottinghamtec" rel="noopener" target="_blank"><span
+							class="fab fa-twitter"></span></a>
+					&nbsp;
+					<a href="https://www.instagram.com/nottinghamtec/" rel="noopener" target="_blank"><span
+							class="fab fa-instagram"></span></a>
+				</span>
+			</div>
+			<div class="col m3 hide-on-small-and-down">
+				<a href="https://su.nottingham.ac.uk/" rel="nofollow">
+					<img class="assoc-logo valign right" src="/imgs/UoNSU-small.webp"
+						alt="University of Nottingham Students' Union">
+				</a>
+			</div>
+			<div class="col m1 hide-on-small-and-down" style="margin-left: 1em;">
+				<a href="https://www.plasa.org/" rel="nofollow">
+					<img class="assoc-logo valign right" src="/imgs/plasa.svg" alt="Plasa Member">
+				</a>
 			</div>
 		</div>
-	</footer>
+	</div>
+</footer>
 
-	<script src="/js/materialize.min.js"></script>
+<script src="/js/materialize.min.js"></script>
 
-	<script>
-        M.AutoInit();
-		document.addEventListener('DOMContentLoaded', function() {
-			var offset = 300; // How far down does the button show
-			var offset_opacity = 1000; // How far down does the opacity increase
+<script>
+	M.AutoInit();
+	document.addEventListener('DOMContentLoaded', function () {
+		var offset = 300; // How far down does the button show
+		var offset_opacity = 1000; // How far down does the opacity increase
 
-			var back_to_top = document.getElementById('to-top'); // Button class
-            if(typeof(back_to_top) != 'undefined' && back_to_top != null) {
-			    window.onscroll = function(e) {
-				    if(window.pageYOffset > offset) {
-					    back_to_top.classList.add('visible');
-				    } else {
-					    back_to_top.classList.remove('visible');
-				    }
-				    if(window.pageYOffset > offset_opacity) {
-					    back_to_top.classList.remove('fade-out');
-				    } else {
-					    back_to_top.classList.add('fade-out');
-				    }
-			    };
-			    // Smooth (criminal) scroll to top
-			    back_to_top.addEventListener('click', function(event){
-				    event.preventDefault();
-				    window.scroll({
-                      top: 0,
-                      behavior: 'smooth'
-                    });
-			    });
-            }
-		});
-	</script>
+		var back_to_top = document.getElementById('to-top'); // Button class
+		if (typeof (back_to_top) != 'undefined' && back_to_top != null) {
+			window.onscroll = function (e) {
+				if (window.pageYOffset > offset) {
+					back_to_top.classList.add('visible');
+				} else {
+					back_to_top.classList.remove('visible');
+				}
+				if (window.pageYOffset > offset_opacity) {
+					back_to_top.classList.remove('fade-out');
+				} else {
+					back_to_top.classList.add('fade-out');
+				}
+			};
+			// Smooth (criminal) scroll to top
+			back_to_top.addEventListener('click', function (event) {
+				event.preventDefault();
+				window.scroll({
+					top: 0,
+					behavior: 'smooth'
+				});
+			});
+		}
+	});
+</script>
 </body>
+
 </html>
